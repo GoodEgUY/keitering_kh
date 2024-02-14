@@ -11,7 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <main class="mainWrapper">
@@ -37,14 +41,11 @@
               <div class="serviceItemImg">
                 <img src="./assets/images/eco.jpg" alt="" />
               </div>
-              <div class="serviceItemTitle">
-                <h2 class="serviceItemName">Економ</h2>
-                <p class="serviceItemPricing">Від 3000 грн.</p>
-              </div>
-              <div class="serviceItemTitle">
+
+              <!-- <div class="serviceItemTitle">
                 <h3>кі-сть людей</h3>
                 <p>20 дорослих та 5 дітей</p>
-              </div>
+              </div> -->
             </div>
             <div class="accordion__title">
               <div class="accordion__arrow">
@@ -53,7 +54,11 @@
                   class="accordion__arrow-item"
                 />
               </div>
-              <span class="accordion__title-text">Подробний опис меню</span>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Економ</h2>
+                <p class="serviceItemPricing">Від 3000 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
             </div>
 
             <div class="accordion__content">
@@ -84,10 +89,6 @@
               <div class="serviceItemImg">
                 <img src="./assets/images/standart.jpg" alt="" />
               </div>
-              <div class="serviceItemTitle">
-                <h2 class="serviceItemName">Стандарт</h2>
-                <p class="serviceItemPricing">Від 5000 грн.</p>
-              </div>
             </div>
             <div class="accordion__title">
               <div class="accordion__arrow">
@@ -96,7 +97,11 @@
                   class="accordion__arrow-item"
                 />
               </div>
-              <span class="accordion__title-text">Подробний опис меню</span>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Стандарт</h2>
+                <p class="serviceItemPricing">Від 5000 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
             </div>
 
             <div class="accordion__content">
@@ -127,10 +132,6 @@
               <div class="serviceItemImg">
                 <img src="./assets/images/premium.jpg" alt="" />
               </div>
-              <div class="serviceItemTitle">
-                <h2 class="serviceItemName">Премиум</h2>
-                <p class="serviceItemPricing">Від 10000 грн.</p>
-              </div>
             </div>
             <div class="accordion__title">
               <div class="accordion__arrow">
@@ -139,7 +140,11 @@
                   class="accordion__arrow-item"
                 />
               </div>
-              <span class="accordion__title-text">Подробний опис меню</span>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Премиум</h2>
+                <p class="serviceItemPricing">Від 10000 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
             </div>
 
             <div class="accordion__content">
@@ -189,10 +194,6 @@
               <div class="serviceItemImg">
                 <img src="./assets/images/lux.jpg" alt="" />
               </div>
-              <div class="serviceItemTitle">
-                <h2 class="serviceItemName">Люкс</h2>
-                <p class="serviceItemPricing">Від 15000 грн.</p>
-              </div>
             </div>
             <div class="accordion__title">
               <div class="accordion__arrow">
@@ -201,7 +202,11 @@
                   class="accordion__arrow-item"
                 />
               </div>
-              <span class="accordion__title-text">Подробний опис меню</span>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Люкс</h2>
+                <p class="serviceItemPricing">Від 15000 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
             </div>
 
             <div class="accordion__content">
@@ -227,6 +232,328 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="servicesWrapper">
+        <h1 class="sectionName">Додаткові послуги</h1>
+        <div class="accordion">
+          <div class="accordion__item" data-aos="fade-up">
+            <div class="serviceItem">
+              <div class="serviceItemImg">
+                <img src="./assets/images/animators.jpg" alt="" />
+              </div>
+
+              <!-- <div class="serviceItemTitle">
+                <h3>кі-сть людей</h3>
+                <p>20 дорослих та 5 дітей</p>
+              </div> -->
+            </div>
+            <div class="accordion__title">
+              <div class="accordion__arrow">
+                <img
+                  src="./assets/images/expand_more_black_24dp 1.svg"
+                  class="accordion__arrow-item"
+                />
+              </div>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Аніматори</h2>
+                <p class="serviceItemPricing">Від 2000 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
+            </div>
+
+            <div class="accordion__content">
+              <div class="serviceMenuTitle">
+                <h4>Закуски:</h4>
+                <ul>
+                  <li>Брускетти з в'яленими томатами, сиром, виноградом</li>
+                  <li>Шарований пиріг з салямі, сиром, помідорами</li>
+                  <li>Лаваш із куркою ,крем сиром,огірком</li>
+                  <li>Тарталетка крабова + кукурудза</li>
+                  <li>Фруктове нарізування (яблука,хурма,груша,виноград)</li>
+                  <li>Нарізки м'ясна (3 види + багет)</li>
+                </ul>
+                <h4>Дітям:</h4>
+                <ul>
+                  <li>дітям Піццети міні кожному по 2 види</li>
+                </ul>
+                <h4>Додатково:</h4>
+                <ul>
+                  <li>Паперовий посуд</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-aos="fade-up">
+            <div class="serviceItem">
+              <div class="serviceItemImg">
+                <img src="./assets/images/focus.jpg" alt="" />
+              </div>
+            </div>
+            <div class="accordion__title">
+              <div class="accordion__arrow">
+                <img
+                  src="./assets/images/expand_more_black_24dp 1.svg"
+                  class="accordion__arrow-item"
+                />
+              </div>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Фокусники</h2>
+                <p class="serviceItemPricing">Від 2000 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
+            </div>
+
+            <div class="accordion__content">
+              <div class="serviceMenuTitle">
+                <h4>Закуски:</h4>
+                <ul>
+                  <li>Брускетти з в'яленими томатами, сиром, виноградом</li>
+                  <li>Шарований пиріг з салямі, сиром, помідорами</li>
+                  <li>Лаваш із куркою ,крем сиром,огірком</li>
+                  <li>Тарталетка крабова + кукурудза</li>
+                  <li>Фруктове нарізування (яблука,хурма,груша,виноград)</li>
+                  <li>Нарізки м'ясна (3 види + багет)</li>
+                </ul>
+                <h4>Дітям:</h4>
+                <ul>
+                  <li>дітям Піццети міні кожному по 2 види</li>
+                </ul>
+                <h4>Додатково:</h4>
+                <ul>
+                  <li>Паперовий посуд</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-aos="fade-up">
+            <div class="serviceItem">
+              <div class="serviceItemImg">
+                <img src="./assets/images/show.jpg" alt="" />
+              </div>
+            </div>
+            <div class="accordion__title">
+              <div class="accordion__arrow">
+                <img
+                  src="./assets/images/expand_more_black_24dp 1.svg"
+                  class="accordion__arrow-item"
+                />
+              </div>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Шоу</h2>
+                <p class="serviceItemPricing">Від 2000 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
+            </div>
+
+            <div class="accordion__content">
+              <div class="serviceMenuTitle">
+                <h4>Закуски:</h4>
+                <ul>
+                  <li>
+                    Брускетти з в'яленими томатами Крем сир, виноград, ручка
+                  </li>
+                  <li>Лаваш рол з куркою гриль,крем сир,огірок.</li>
+                  <li>Шпажки сир бри-чері-оливки</li>
+                  <li>Баклажани рулетики з сиром та помідором</li>
+                  <li>Канапі пісочні кошики з салатом крабовий +кукурудза</li>
+                  <li>Млинці з Лососем та крем сиром</li>
+                  <li>Гарбуз з брі та горіхами запечений з руколою</li>
+                </ul>
+                <h4>Гарячі м'ясні:</h4>
+                <ul>
+                  <li>Пальчики свинячі запечені з морквою</li>
+                  <li>Шашлички з куркою та ананасом</li>
+                </ul>
+                <h4>Нарізки:</h4>
+                <ul>
+                  <li>Фруктова нарізка</li>
+                  <li>Сирна нарізка</li>
+                  <li>М'ясна нарізка</li>
+                </ul>
+                <h4>Салати у склянках:</h4>
+                <ul>
+                  <li>Калат курка/ананас/сир</li>
+                  <li>або олив'є або м'ясо /сир/гриби та цибуля /сухарики</li>
+                </ul>
+                <h4>Напої:</h4>
+                <ul>
+                  <li>Компот домашній полуничний</li>
+                </ul>
+                <h4>Дитячий стіл:</h4>
+                <ul>
+                  <li>Бургери міні з куркою</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-aos="fade-up">
+            <div class="serviceItem">
+              <div class="serviceItemImg">
+                <img src="./assets/images/zona.jpg" alt="" />
+              </div>
+            </div>
+            <div class="accordion__title">
+              <div class="accordion__arrow">
+                <img
+                  src="./assets/images/expand_more_black_24dp 1.svg"
+                  class="accordion__arrow-item"
+                />
+              </div>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Фотозона</h2>
+                <p class="serviceItemPricing">Від 1500 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
+            </div>
+
+            <div class="accordion__content">
+              <div class="serviceMenuTitle">
+                <h4>Закуски:</h4>
+                <ul>
+                  <li>Брускетти з в'яленими томатами, сиром, виноградом</li>
+                  <li>Шарований пиріг з салямі, сиром, помідорами</li>
+                  <li>Лаваш із куркою ,крем сиром,огірком</li>
+                  <li>Тарталетка крабова + кукурудза</li>
+                  <li>Фруктове нарізування (яблука,хурма,груша,виноград)</li>
+                  <li>Нарізки м'ясна (3 види + багет)</li>
+                </ul>
+                <h4>Дітям:</h4>
+                <ul>
+                  <li>дітям Піццети міні кожному по 2 види</li>
+                </ul>
+                <h4>Додатково:</h4>
+                <ul>
+                  <li>Паперовий посуд</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item" data-aos="fade-up">
+            <div class="serviceItem">
+              <div class="serviceItemImg">
+                <img src="./assets/images/photograph.jpg" alt="" />
+              </div>
+            </div>
+            <div class="accordion__title">
+              <div class="accordion__arrow">
+                <img
+                  src="./assets/images/expand_more_black_24dp 1.svg"
+                  class="accordion__arrow-item"
+                />
+              </div>
+              <div class="serviceItemTitle">
+                <h2 class="serviceItemName">Фотограф</h2>
+                <p class="serviceItemPricing">Від 1500 грн.</p>
+              </div>
+              <span class="accordion__title-text"></span>
+            </div>
+
+            <div class="accordion__content">
+              <div class="serviceMenuTitle">
+                <h4>Закуски:</h4>
+                <ul>
+                  <li>Брускетти з в'яленими томатами, сиром, виноградом</li>
+                  <li>Шарований пиріг з салямі, сиром, помідорами</li>
+                  <li>Лаваш із куркою ,крем сиром,огірком</li>
+                  <li>Тарталетка крабова + кукурудза</li>
+                  <li>Фруктове нарізування (яблука,хурма,груша,виноград)</li>
+                  <li>Нарізки м'ясна (3 види + багет)</li>
+                </ul>
+                <h4>Дітям:</h4>
+                <ul>
+                  <li>дітям Піццети міні кожному по 2 види</li>
+                </ul>
+                <h4>Додатково:</h4>
+                <ul>
+                  <li>Паперовий посуд</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="servicesWrapper">
+        <h1 class="sectionName">Більше фото</h1>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/eco.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/lux.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/photo1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/photo2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/photo3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/standart.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/photo4.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/photo5.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviewsItemImg">
+                <img src="./assets/images/premium.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          const swiper = new Swiper(".swiper", {
+            direction: "horizontal",
+            loop: true,
+            speed: 600,
+            autoplay: {
+              delay: 2000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            spaceBetween: 30,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            scrollbar: {
+              el: ".swiper-scrollbar",
+            },
+          });
+        </script>
       </section>
       <header>
         <a href="" class="headerNavItem"
@@ -264,10 +591,11 @@
         >
       </header>
     </main>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
-      </script>
+      AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/js.js"></script>
   </body>
