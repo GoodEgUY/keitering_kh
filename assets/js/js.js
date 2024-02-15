@@ -96,37 +96,37 @@ $(document).on("click", function (event) {
 $(function () {
   $("#datepicker").datepicker();
 });
-
-$("#standartButton").on("click", (event) => {
-  $("#clientTarget").val("Банкет(Эконом)");
+$("#ecoButton").on("click", (event) => {
+  $("#clientTarget").val("Банкет(Эко)");
   console.log($("#clientTarget").val());
   event.stopPropagation();
   $(".modalWrapper").addClass("modalWrapper-active");
 });
-$("#premiumButton").on("click", (event) => {
+$("#standartButton").on("click", (event) => {
   $("#clientTarget").val("Банкет(Стандарт)");
   console.log($("#clientTarget").val());
   event.stopPropagation();
   $(".modalWrapper").addClass("modalWrapper-active");
 });
-$("#luxButton").on("click", (event) => {
+$("#premiumButton").on("click", (event) => {
   $("#clientTarget").val("Банкет(Премиум)");
   console.log($("#clientTarget").val());
   event.stopPropagation();
   $(".modalWrapper").addClass("modalWrapper-active");
 });
-$("#masterClassButton").on("click", (event) => {
+$("#luxButton").on("click", (event) => {
   $("#clientTarget").val("Банкет(Люкс)");
   console.log($("#clientTarget").val());
   event.stopPropagation();
   $(".modalWrapper").addClass("modalWrapper-active");
 });
-$("#ecoButton").on("click", (event) => {
+$("#masterClassButton").on("click", (event) => {
   $("#clientTarget").val("Мастер Класс");
   console.log($("#clientTarget").val());
   event.stopPropagation();
   $(".modalWrapper").addClass("modalWrapper-active");
 });
+
 $("#genderPartyButton").on("click", (event) => {
   $("#clientTarget").val("Гендер Пати");
   console.log($("#clientTarget").val());
