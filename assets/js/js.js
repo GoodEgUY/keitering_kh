@@ -97,12 +97,6 @@ $(function () {
   $("#datepicker").datepicker();
 });
 
-$("#ecoButton").on("click", (event) => {
-  $("#clientTarget").val("Мастер Класс");
-  console.log($("#clientTarget").val());
-  event.stopPropagation();
-  $(".modalWrapper").addClass("modalWrapper-active");
-});
 $("#standartButton").on("click", (event) => {
   $("#clientTarget").val("Банкет(Эконом)");
   console.log($("#clientTarget").val());
@@ -123,6 +117,18 @@ $("#luxButton").on("click", (event) => {
 });
 $("#masterClassButton").on("click", (event) => {
   $("#clientTarget").val("Банкет(Люкс)");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
+$("#ecoButton").on("click", (event) => {
+  $("#clientTarget").val("Мастер Класс");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
+$("#genderPartyButton").on("click", (event) => {
+  $("#clientTarget").val("Гендер Пати");
   console.log($("#clientTarget").val());
   event.stopPropagation();
   $(".modalWrapper").addClass("modalWrapper-active");
