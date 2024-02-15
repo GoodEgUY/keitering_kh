@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
     <title>Кейтерінг у Харкові</title>
     <link rel="stylesheet" href="./assets/css/css.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +37,7 @@
           class="introArrow"
         />
       </section>
-      <section class="servicesWrapper">
+      <section class="servicesWrapper" id="bankets">
         <h1 class="sectionName">Варіанти столів</h1>
         <div class="accordion">
           <div class="accordion__item" data-aos="fade-up">
@@ -80,6 +84,7 @@
                 <ul>
                   <li>Паперовий посуд</li>
                 </ul>
+                <div class="formButton" id="ecoButton">Замовити</div>
               </div>
             </div>
           </div>
@@ -123,6 +128,7 @@
                 <ul>
                   <li>Паперовий посуд</li>
                 </ul>
+                <div class="formButton" id="standartButton">Замовити</div>
               </div>
             </div>
           </div>
@@ -185,6 +191,7 @@
                 <ul>
                   <li>Бургери міні з куркою</li>
                 </ul>
+                <div class="formButton" id="premiunButton">Замовити</div>
               </div>
             </div>
           </div>
@@ -228,18 +235,19 @@
                 <ul>
                   <li>Паперовий посуд</li>
                 </ul>
+                <div class="formButton" id="luxButton">Замовити</div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="servicesWrapper">
+      <section class="servicesWrapper" id="holiday">
         <h1 class="sectionName">Додаткові послуги</h1>
         <div class="accordion">
           <div class="accordion__item" data-aos="fade-up">
             <div class="serviceItem">
               <div class="serviceItemImg">
-                <img src="./assets/images/animators.jpg" alt="" />
+                <img src="./assets/images/masterclass.jpg" alt="" />
               </div>
 
               <!-- <div class="serviceItemTitle">
@@ -254,32 +262,54 @@
                   class="accordion__arrow-item"
                 />
               </div>
+
               <div class="serviceItemTitle">
-                <h2 class="serviceItemName">Аніматори</h2>
+                <h2 class="serviceItemName">#ТОП</h2>
                 <p class="serviceItemPricing">Від 2000 грн.</p>
               </div>
+              <h3 class="serviceItemSubName">КУЛІНАРНІ ДИТЯЧІ МАЙСТЕР-КЛАСИ</h3>
               <span class="accordion__title-text"></span>
             </div>
 
             <div class="accordion__content">
               <div class="serviceMenuTitle">
-                <h4>Закуски:</h4>
+                <h4>
+                  Чудова можливість для дітей самостійно приготувати смачні
+                  страви та пірнути у кулінарну подорож разом з професійними
+                  поварами
+                </h4>
+                <h4>
+                  Меню страв таке різноманітне та цікаве підійде навіть для дуже
+                  вибагливих :
+                </h4>
                 <ul>
-                  <li>Брускетти з в'яленими томатами, сиром, виноградом</li>
-                  <li>Шарований пиріг з салямі, сиром, помідорами</li>
-                  <li>Лаваш із куркою ,крем сиром,огірком</li>
-                  <li>Тарталетка крабова + кукурудза</li>
-                  <li>Фруктове нарізування (яблука,хурма,груша,виноград)</li>
-                  <li>Нарізки м'ясна (3 види + багет)</li>
+                  <li>смачна піца</li>
+                  <li>соковиті бургери</li>
+                  <li>корисні цукерки</li>
+                  <li>грузинське хачапурі</li>
+                  <li>італійське тірамісу</li>
+                  <li>шведське фондю</li>
+                  <li>французькі круасани</li>
+                  <li>українські млинці та борщ</li>
+                  <li>пухкі вареники</li>
+                  <li>японські суші та роли</li>
+                  <li>турецька шаурма</li>
+                  <li>вкуснючі лимонади та напої</li>
                 </ul>
-                <h4>Дітям:</h4>
-                <ul>
-                  <li>дітям Піццети міні кожному по 2 види</li>
+                <ul style="list-style-type: none">
+                  <li>🔺тривалість 1,5-2 години</li>
+                  <li>🔺від 5 років</li>
+                  <li>🔺група від 5 дітей</li>
+                  <li>
+                    🔺вартість 2000 грн + трансфер ( прораховуємо окремо )
+                  </li>
                 </ul>
-                <h4>Додатково:</h4>
-                <ul>
-                  <li>Паперовий посуд</li>
-                </ul>
+                <h4>
+                  🧑🏼‍🍳Бажаешь весело та незабутньо провести кулінарну подорож та
+                  пізнати щось цікаве - тоді скоріше замовляй
+                  <span class="color:#f48841;"> КУЛІНАРНИЙ майстер-клас</span>
+                </h4>
+                <div class="formButton" id="masterClassButton">Замовити</div>
               </div>
             </div>
           </div>
@@ -475,7 +505,7 @@
           </div>
         </div>
       </section>
-      <section class="servicesWrapper">
+      <section class="servicesWrapper" id="photos">
         <h1 class="sectionName">Більше фото</h1>
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -555,20 +585,70 @@
           });
         </script>
       </section>
+      <section class="servicesWrapper" id="rules">
+        <h1 class="sectionName">
+          <span style="color: #f48841">Умови</span> та Принципи
+        </h1>
+        <h4 class="faqName">
+          Пропозиція щодо організації кейтерингів та фуршетів під ключ в
+          Харкові, включає кілька ключових аспектів:
+        </h4>
+        <div class="serviceMenuTitle">
+          <ol class="faqOrderList">
+            <li>
+              Підготовка концепції: - Обговорення з клієнтом цілей та переваг,
+              складання меню з урахуванням кількості гостей та переваг клієнта
+              Затвердження бюджету на закупівлю, передоплата на продукти.
+            </li>
+            <li>
+              Закупівля свіжих та якісних продуктів у перевірених
+              постачальників.
+            </li>
+            <li>
+              <ul>
+                <li>Доставка та Сервірування</li>
+                <li>
+                  - Стильне оформлення страв на посуді від побажань клієнта
+                  (кераміка/паперова)
+                </li>
+                <li>
+                  Залучення додаткових послуг (фотозона, фотограф, аніматори
+                  тощо)
+                </li>
+              </ul>
+            </li>
+            <i
+              >Ціна на організація кейтерингу буде залежати від вибраних послуг,
+              масштабу заходу, меню та інших факторів.*</i
+            >
+          </ol>
+        </div>
+      </section>
+      <section class="servicesWrapper" id="faq">
+        <h4 class="sectionName">Контакти</h4>
+        <div class="contacts">
+          <a href=""> <img src="./assets/images/inst.png" alt="Instagram" /></a>
+          <a href=""><img src="./assets/images/tlg.png" alt="Telegram" /></a>
+          <a href=""><img src="./assets/images/vib.png" alt="Viber" /></a>
+        </div>
+        <div class="phones">
+          <a href="tel:+380670000000">+380670000000</a>
+        </div>
+      </section>
       <header>
-        <a href="" class="headerNavItem"
+        <a href="#bankets" class="headerNavItem"
           ><img
             src="./assets/images/Size24=Рестораны, Style=Outline (1).svg"
             alt=""
           />
-          <h1>Послуги</h1></a
+          <h1>Столи</h1></a
         >
-        <a href="" class="headerNavItem"
+        <a href="#holiday" class="headerNavItem"
           ><img
-            src="./assets/images/Size24=Подробное описание, Style=Outline.svg"
+            src="./assets/images/Size24=Калории, Style=Outline.svg"
             alt=""
           />
-          <h1>Звіти</h1></a
+          <h1>Свята</h1></a
         >
         <div class="headerModalItem">
           <div class="formModalButton">
@@ -578,18 +658,52 @@
             />
           </div>
         </div>
-        <a href="" class="headerNavItem"
+        <a href="#photos" class="headerNavItem"
           ><img
             src="./assets/images/Size24=Положить трубку, Style=Outline.svg"
             alt=""
           />
-          <h1>Контакти</h1></a
+          <h1>Звіти</h1></a
         >
-        <a href="" class="headerNavItem"
+        <a href="#rules" class="headerNavItem"
           ><img src="./assets/images/Size24=Фильтр, Style=Outline.svg" alt="" />
-          <h1>FAQ</h1></a
+          <h1>Умови</h1></a
         >
       </header>
+      <div class="modalWrapper">
+        <div class="modalBody">
+          <h1 class="formNameText">
+            Заповніть Форму, та ми Підготуємо Пропозицію для Вас!
+          </h1>
+          <form onsubmit="return ValidateForm(event, this)" id="quizForm">
+            <input type="text" hidden id="clientTarget" value="" />
+            <input
+              type="text"
+              class="formInput"
+              name="dateField"
+              id="datepicker"
+              placeholder="Оберіть дату"
+            />
+            <label for="clientName" class="labelForm">Введіть ім'я</label
+            ><input
+              type="name"
+              id="clientName"
+              name="name"
+              placeholder="Введите Имя"
+              class="formInput"
+            />
+            <label for="phoneNumber" class="labelForm">Введіть телефон</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phone"
+              placeholder="Введите ваш номер телефона"
+              class="formInput"
+            />
+            <button type="submit" class="formButton">Замовити</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -597,6 +711,171 @@
       AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="./assets/js/js.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
+    <script src="https://mzcngzgpnn.fun/validation/countryCodes.js"></script>
+    <script type="text/javascript">
+      function ValidateForm(event, form) {
+        event.preventDefault();
+        let clientTarget = $("#clientTarget").val().trim();
+        let phoneInput = form.querySelector('input[name="phone"]');
+        let name = $("input[name*='name']").val().trim();
+        let date = $("input[name*='date']").val().trim();
+        let phone = phoneInput.value;
+        let code = form.querySelector(".iti__selected-dial-code").innerHTML;
+        let check = $("#checkboxForm");
+        let countryCode = code.replace(/\D/g, "");
+        let countryCodeLength = countryCode.length;
+
+        let extractedPhoneNumber = phone.substring(0, countryCodeLength);
+
+        phone = phone.replace(/\D/g, "");
+
+        const countryName = getCountryByDialCode(code);
+        console.log(countryName);
+        console.log(phone);
+        let phoneNumber = String("+" + countryCode + phone);
+        function validateAndSendForm() {
+          $("input[name='name']").removeClass("error-input");
+          $("input[name='phone']").removeClass("error-input");
+
+          if (name.length < 2 || phone.length < 3) {
+            if (phone.length < 3) {
+              $("input[name='phone']").addClass("error-input");
+            }
+            if (name.length < 2) {
+              $("input[name='name']").addClass("error-input");
+            }
+            return false;
+          } else {
+            sendForm(phoneNumber, name, date, clientTarget);
+            return true;
+          }
+        }
+        $("input[name='name']").on("focus", () => {
+          $("input[name='name']").removeClass("error-input");
+        });
+        $("input[name='phone']").on("focus", () => {
+          $("input[name='phone']").removeClass("error-input");
+        });
+
+        validateAndSendForm();
+      }
+      $(document).ready(function () {
+        var inputElements = document.querySelectorAll('input[type="tel"]');
+
+        inputElements.forEach(function (input) {
+          var iti = window.intlTelInput(input, {
+            autoPlaceholder: "aggressive",
+            geoIpLookup: function (callback) {
+              $.get("http://ipinfo.io", function () {}, "jsonp").always(
+                function (resp) {
+                  var countryCode = resp && resp.country ? resp.country : "";
+                  callback(countryCode);
+                }
+              );
+            },
+            hiddenInput: "phone_number",
+            onlyCountries: [
+              "AT",
+              "BE",
+              "CY",
+              "CZ",
+              "DK",
+              "EE",
+              "FI",
+              "FR",
+              "DE",
+              "IS",
+              "IE",
+              "IT",
+              "LV",
+              "LI",
+              "LT",
+              "LU",
+              "MT",
+              "MC",
+              "NL",
+              "NO",
+              "PT",
+              "ES",
+              "SE",
+              "CH",
+              "UA",
+            ],
+            preferredCountries: ["UA"],
+            separateDialCode: true,
+            utilsScript:
+              "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js",
+          });
+
+          $(input).on("countrychange", function (event) {
+            var selectedCountryData = iti.getSelectedCountryData();
+            var newPlaceholder = intlTelInputUtils.getExampleNumber(
+              selectedCountryData.iso2,
+              true,
+              intlTelInputUtils.numberFormat.INTERNATIONAL
+            );
+            iti.setNumber("");
+            var mask = newPlaceholder.replace(/[1-9]/g, "0");
+            $(this).mask(mask);
+          });
+
+          iti.promise.then(function () {
+            $(input).trigger("countrychange");
+          });
+        });
+      });
+
+      function sendForm(phone, name, date, clientTarget) {
+        phoneNumber = phone;
+        clientName = name;
+        clientDate = date;
+        let target = "";
+        if (clientTarget) {
+          target = `Кнопка отправки: ${clientTarget}`;
+        }
+        if (phoneNumber === "") {
+          alert("Пожалуйста, введите ваш номер телефона.");
+          return;
+        }
+
+        var message = `<b>Имя клиента:</b><code> ${clientName}</code>\n<b>Номер телефона:</b><code> ${phoneNumber}</code>\n${target}\n<b>Дата клиента:${clientDate}</b>\n
+        `;
+
+        console.log("Отправляемое сообщение:", message);
+
+        axios
+          .post(
+            `https://api.telegram.org/bot6752589685:AAGKKk5NKk01S5kxoIgrK_Eyj01HkqjvSIE/sendMessage`,
+            {
+              //
+              chat_id: "1890236692",
+              parse_mode: "html",
+              text: message,
+            }
+          )
+          .then((response) => {
+            console.log("Сообщение отправлено", response);
+
+            window.location.href = "thanks.html";
+          })
+          .catch((error) => {
+            console.error("Произошла ошибка при отправке сообщения", error);
+            alert("Произошла ошибка при отправке данных");
+          });
+      }
+    </script>
   </body>
 </html>

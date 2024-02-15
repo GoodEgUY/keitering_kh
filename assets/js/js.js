@@ -33,7 +33,34 @@ const DATA = {
     дитячий_стіл: ["Бургеры мини с курицей"],
   },
 };
+var inputs = document.querySelectorAll("input");
 
+document.addEventListener("DOMContentLoaded", function () {
+  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+  smoothLinks.forEach(function (smoothLink) {
+    smoothLink.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const targetId = smoothLink.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        const offsetTop = targetElement.offsetTop;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth", // Добавляем плавную прокрутку
+        });
+      }
+    });
+  });
+});
+
+inputs.forEach(function (input) {
+  input.addEventListener("focus", function () {
+    document.body.style.zoom = 1;
+  });
+});
 //  ACCORDION
 $(function () {
   $(".accordion__title").on("click", function (e) {
@@ -50,4 +77,53 @@ $(function () {
     $this.next().slideToggle();
     $(".accordion__arrow", this).toggleClass("accordion__rotate");
   });
+});
+
+$(".formModalButton").on("click", function (event) {
+  event.stopPropagation(); // Остановить всплытие события, чтобы избежать закрытия модального окна сразу после открытия
+  $(".modalWrapper").addClass("modalWrapper-active");
+  $("#clientTarget").val("");
+});
+
+// При клике на любое место в документе
+$(document).on("click", function (event) {
+  // Проверяем, является ли цель клика не модальным окном или его потомком
+  if ($(event.target).hasClass("modalWrapper")) {
+    // Закрываем модальное окно
+    $(".modalWrapper").removeClass("modalWrapper-active");
+  }
+});
+$(function () {
+  $("#datepicker").datepicker();
+});
+
+$("#ecoButton").on("click", (event) => {
+  $("#clientTarget").val("Мастер Класс");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
+$("#standartButton").on("click", (event) => {
+  $("#clientTarget").val("Банкет(Эконом)");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
+$("#premiumButton").on("click", (event) => {
+  $("#clientTarget").val("Банкет(Стандарт)");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
+$("#luxButton").on("click", (event) => {
+  $("#clientTarget").val("Банкет(Премиум)");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
+$("#masterClassButton").on("click", (event) => {
+  $("#clientTarget").val("Банкет(Люкс)");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
 });
