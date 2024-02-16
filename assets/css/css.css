@@ -463,6 +463,33 @@ header {
   color: #ffffffc9;
   text-decoration: underline;
 }
+.thanksWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+  height: 100%;
+}
+.thanksConteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width:600px;
+  width: 100%;
+  padding: 16px;
+}
+.thanksMainText {
+  font-size: 24px;
+  color: #ffffffc9;
+  margin-bottom: 30px;
+}
+.thanksMainTitle {
+  font-size: 16px;
+  color: #ffffffc9;
+  text-align: center;
+}
 @media (max-width: 768px) {
   .accordion__item .accordion__title {
     font-size: 20px;
