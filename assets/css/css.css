@@ -307,7 +307,7 @@ header {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 6;
+  z-index: 1001;
   top: 0;
   left: 0;
   backdrop-filter: blur(8px);
