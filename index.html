@@ -868,31 +868,7 @@
             },
             hiddenInput: "phone_number",
             onlyCountries: [
-              "AT",
-              "BE",
-              "CY",
-              "CZ",
-              "DK",
-              "EE",
-              "FI",
-              "FR",
-              "DE",
-              "IS",
-              "IE",
-              "IT",
-              "LV",
-              "LI",
-              "LT",
-              "LU",
-              "MT",
-              "MC",
-              "NL",
-              "NO",
-              "PT",
-              "ES",
-              "SE",
-              "CH",
-              "UA",
+              "UA"
             ],
             preferredCountries: ["UA"],
             separateDialCode: true,
@@ -909,7 +885,7 @@
             );
             iti.setNumber("");
             var mask = newPlaceholder.replace(/[1-9]/g, "0");
-            $(this).mask(mask);
+            $(this).mask("00 000 0000");
           });
 
           iti.promise.then(function () {
