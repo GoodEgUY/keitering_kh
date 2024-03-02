@@ -133,3 +133,15 @@ $("#genderPartyButton").on("click", (event) => {
   event.stopPropagation();
   $(".modalWrapper").addClass("modalWrapper-active");
 });
+$("#kidShowButton").on("click", (event) => {
+  $("#clientTarget").val("Детское Шоу");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
+$("#animatorsButton").on("click", (event) => {
+  $("#clientTarget").val("Аніматори");
+  console.log($("#clientTarget").val());
+  event.stopPropagation();
+  $(".modalWrapper").addClass("modalWrapper-active");
+});
